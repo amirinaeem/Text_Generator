@@ -1,0 +1,10 @@
+# ==================================
+# This file excludes build artifacts, envs, and dependencies from git.
+# ==================================
+node_modules
+client/node_modules
+server/node_modules
+client/dist
+.env
+.DS_Store
+coverage

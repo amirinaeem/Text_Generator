@@ -1,0 +1,27 @@
+{
+"name": "node-markov-server",
+"type": "module",
+"version": "1.0.0",
+"main": "index.js",
+"scripts": {
+"dev": "nodemon index.js",
+"test": "NODE_OPTIONS=--experimental-vm-modules jest --runInBand"
+},
+"dependencies": {
+"cors": "^2.8.5",
+"dotenv": "^16.4.5",
+"express": "^4.19.2",
+"html-to-text": "^9.0.5",
+"multer": "^1.4.5-lts.1",
+"node-fetch": "^3.3.2",
+"seedrandom": "^3.0.5"
+},
+"devDependencies": {
+"jest": "^29.7.0",
+"nodemon": "^3.1.7"
+},
+"jest": {
+"testEnvironment": "node",
+"roots": ["<rootDir>/src/tests"]
+}
+}

@@ -1,0 +1,16 @@
+{
+"name": "node-markov-fullstack",
+"private": true,
+"version": "1.0.0",
+"description": "Full-stack Markov text generator (Render-ready): Express API + React/Tailwind UI + CLI + tests.",
+"scripts": {
+"postinstall": "cd client && npm install && cd ../server && npm install",
+"build": "cd client && npm run build",
+"start": "node server/index.js",
+"dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+"test": "cd server && npm test"
+},
+"dependencies": {
+"concurrently": "^9.1.0"
+}
+}
